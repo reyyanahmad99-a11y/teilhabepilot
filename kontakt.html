@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt & FAQ – teilhabepilot</title>
+  <meta name="description" content="Kontaktieren Sie teilhabepilot — per E-Mail, Telefon oder über das Kontaktformular. Mo–Fr 07:00–17:00 Uhr erreichbar.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header class="navbar">
+  <div class="container navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <img src="logo mit text 2.png" alt="teilhabepilot">
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="fuer-eltern.html">Für Eltern</a></li>
+      <li><a href="fuer-aemter.html">Für Ämter</a></li>
+      <li><a href="ueber-uns.html">Über uns</a></li>
+      <li><a href="karriere.html">Karriere</a></li>
+      <li><a href="kontakt.html" class="active">Kontakt & FAQ</a></li>
+    </ul>
+    <a href="kontakt.html" class="btn btn-primary navbar__cta">Jetzt anfragen</a>
+    <button class="navbar__hamburger" aria-label="Menü">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container" style="position:relative;z-index:1;">
+    <span class="section-label" style="color:rgba(255,255,255,0.65);">Wir sind für Sie da</span>
+    <h1>Kontakt & FAQ</h1>
+    <p>Mo–Fr von 07:00 bis 17:00 Uhr erreichbar. Wir antworten innerhalb von 24 Stunden.</p>
+  </div>
+</section>
+
+<!-- KONTAKT -->
+<section class="section section--white">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start;">
+
+      <!-- Contact Info -->
+      <div>
+        <span class="section-label">So erreichen Sie uns</span>
+        <h2 class="section-title" style="margin-bottom:32px;">Kontaktdaten</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item__icon">📧</div>
+            <div>
+              <div class="contact-item__label">E-Mail</div>
+              <a href="mailto:anfrage@teilhabepilot.de" class="contact-item__value">anfrage@teilhabepilot.de</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">📞</div>
+            <div>
+              <div class="contact-item__label">Telefon</div>
+              <a href="tel:069870093540" class="contact-item__value">069 870093540</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">🖨</div>
+            <div>
+              <div class="contact-item__label">Fax</div>
+              <div class="contact-item__value">069 870093549</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">📍</div>
+            <div>
+              <div class="contact-item__label">Adresse</div>
+              <div class="contact-item__value">Berliner Straße 300b<br>63065 Offenbach am Main</div>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item__icon">🕐</div>
+            <div>
+              <div class="contact-item__label">Erreichbarkeit</div>
+              <div class="contact-item__value">Mo–Fr: 07:00–17:00 Uhr</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:32px; background:var(--lavender); border-radius:16px; padding:28px 24px;">
+          <h3 style="font-size:1rem; margin-bottom:8px;">Geschäftsführung</h3>
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+            <span style="font-size:1.4rem;">👨‍💼</span>
+            <div>
+              <p style="font-family:'Nunito',sans-serif;font-weight:700;color:var(--indigo);">Fazal Ahmad Khan</p>
+              <p style="font-size:0.85rem;color:var(--light-gray);">Geschäftsführung</p>
+            </div>
+          </div>
+          <div style="font-size:0.9rem;color:var(--gray);display:flex;flex-direction:column;gap:6px;margin-top:8px;">
+            <span>📞 069/870093542</span>
+            <span>📱 0173/5724685</span>
+            <a href="mailto:fazalkhan@teilhabepilot.de" style="color:var(--periwinkle);font-weight:700;">fazalkhan@teilhabepilot.de</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <h3 style="margin-bottom:24px; font-size:1.4rem;">Nachricht senden</h3>
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vorname">Vorname</label>
+              <input type="text" id="vorname" name="vorname" placeholder="Max" required>
+            </div>
+            <div class="form-group">
+              <label for="nachname">Nachname</label>
+              <input type="text" id="nachname" name="nachname" placeholder="Mustermann" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">E-Mail-Adresse</label>
+            <input type="email" id="email" name="email" placeholder="ihre@email.de" required>
+          </div>
+          <div class="form-group">
+            <label for="telefon">Telefonnummer (optional)</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="069 / 12 34 56">
+          </div>
+          <div class="form-group">
+            <label for="betreff">Betreff</label>
+            <select id="betreff" name="betreff" required>
+              <option value="" disabled selected>Bitte wählen…</option>
+              <option value="schulbegleitung">Anfrage Schulbegleitung</option>
+              <option value="kooperation">Kooperationsanfrage (Amt)</option>
+              <option value="bewerbung">Bewerbung / Karriere</option>
+              <option value="sonstiges">Sonstiges</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="nachricht">Ihre Nachricht</label>
+            <textarea id="nachricht" name="nachricht" placeholder="Beschreiben Sie Ihr Anliegen kurz — wir melden uns innerhalb von 24 Stunden…" required></textarea>
+          </div>
+          <div class="form-group">
+            <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-weight:400;color:var(--light-gray);">
+              <input type="checkbox" required style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:var(--indigo);">
+              <span style="font-size:0.9rem;">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="#" style="color:var(--indigo);font-weight:600;">Datenschutzerklärung</a> zu.</span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Nachricht senden</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section section--light" id="faq">
+  <div class="container">
+    <span class="section-label">Häufige Fragen</span>
+    <h2 class="section-title">FAQ</h2>
+    <p class="section-subtitle">Antworten auf die häufigsten Fragen rund um Schulbegleitung und Teilhabeassistenz.</p>
+    <div class="faq-list" style="max-width:760px;">
+
+      <div class="faq-item">
+        <div class="faq-item__question">
+          Wer hat Anspruch auf Schulbegleitung?
+          <span class="faq-item__arrow">▼</span>
+        </div>
+        <div class="faq-item__answer">
+          Kinder und Jugendliche mit einer körperlichen, geistigen oder seelischen Behinderung oder einem erheblichen besonderen Förderbedarf können Anspruch auf Schulbegleitung haben. Dazu gehören z. B. Kinder mit ADHS, Autismus-Spektrum-Störung, körperlichen Einschränkungen oder Lernbehinderungen. Der Anspruch wird durch das zuständige Jugend- oder Sozialamt geprüft.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-item__question">
+          Wie beantrage ich Schulbegleitung für mein Kind?
+          <span class="faq-item__arrow">▼</span>
+        </div>
+        <div class="faq-item__answer">
+          Sie stellen einen Antrag beim zuständigen Jugendamt (nach SGB VIII) oder Sozialamt (nach SGB IX). Dafür benötigen Sie in der Regel einen ärztlichen Bericht oder eine Diagnose sowie ggf. ein schulisches Gutachten. Wir helfen Ihnen gerne dabei, die richtigen Unterlagen zusammenzustellen — melden Sie sich einfach bei uns!
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-item__question">
+          Was kostet eine Schulbegleitung durch teilhabepilot?
+          <span class="faq-item__arrow">▼</span>
+        </div>
+        <div class="faq-item__answer">
+          In der Regel entstehen für Familien keine oder nur geringe Eigenkosten, da die Leistungen vom Jugend- oder Sozialamt übernommen werden. Wir rechnen direkt mit dem zuständigen Amt ab. Bei Fragen zur Finanzierung sprechen Sie uns gerne an.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-item__question">
+          Wie schnell kann die Begleitung starten?
+          <span class="faq-item__arrow">▼</span>
+        </div>
+        <div class="faq-item__answer">
+          Nach Bewilligung durch das Amt starten wir in der Regel binnen 7 Tagen. Wir kümmern uns um den gesamten Prozess: Fachkraft-Matching, Koordination mit der Schule und das Kennenlerngespräch mit Ihnen und Ihrem Kind.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-item__question">
+          Was passiert, wenn die Schulbegleitung krank ist?
+          <span class="faq-item__arrow">▼</span>
+        </div>
+        <div class="faq-item__answer">
+          Wir verfügen über einen qualifizierten Vertretungspool. Im Krankheitsfall sorgen wir so schnell wie möglich für eine geeignete Vertretung, damit Ihr Kind weiterhin betreut wird. Ihre feste Ansprechperson hält Sie stets auf dem Laufenden.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-item__question">
+          Kann ich die Schulbegleitung mit auswählen?
+          <span class="faq-item__arrow">▼</span>
+        </div>
+        <div class="faq-item__answer">
+          Ja! Wir führen ein Kennenlerngespräch durch und stellen Ihnen eine passende Fachkraft vor. Dabei achten wir auf Qualifikation, Schulnähe und die individuellen Bedürfnisse Ihres Kindes. Das Wohl Ihres Kindes steht für uns an erster Stelle.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-item__question">
+          Wie läuft die Dokumentation und Kommunikation ab?
+          <span class="faq-item__arrow">▼</span>
+        </div>
+        <div class="faq-item__answer">
+          Unsere Schulbegleiter*innen erstellen tägliche Berichte über die Begleitung. Sie erhalten regelmäßige Rückmeldungen über die Entwicklung Ihres Kindes. Zudem finden regelmäßige Abstimmungsgespräche mit Schule und Eltern statt.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-item__question">
+          Arbeitet teilhabepilot mit allen Schulen zusammen?
+          <span class="faq-item__arrow">▼</span>
+        </div>
+        <div class="faq-item__answer">
+          Wir arbeiten mit allgemeinen Schulen (Regelschulen), Förderschulen und anderen Bildungseinrichtungen im Raum Offenbach und Frankfurt zusammen. Sprechen Sie uns bei spezifischen Fragen zu Ihrer Schule gerne direkt an.
+        </div>
+      </div>
+
+    </div>
+    <div style="margin-top:40px;text-align:center;">
+      <p style="color:var(--light-gray);margin-bottom:16px;">Ihre Frage ist nicht dabei? Schreiben Sie uns — wir helfen gerne weiter.</p>
+      <a href="mailto:anfrage@teilhabepilot.de" class="btn btn-primary">Frage stellen</a>
+    </div>
+  </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section style="background:var(--white);padding:0;">
+  <div style="background:var(--lavender);height:280px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:12px;">
+    <span style="font-size:2.5rem;">📍</span>
+    <p style="font-family:'Nunito',sans-serif;font-weight:700;color:var(--indigo);font-size:1.1rem;">Berliner Straße 300b, 63065 Offenbach am Main</p>
+    <a href="https://maps.google.com/?q=Berliner+Straße+300b+63065+Offenbach" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="margin-top:8px;">In Google Maps öffnen</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="logo mit text 2.png" alt="teilhabepilot">
+        <p class="footer__tagline">Inklusion mit Plan und Herz — Teilhabeassistenz nach SGB VIII und SGB IX in Offenbach und Umgebung.</p>
+      </div>
+      <div>
+        <h4 class="footer__heading">Navigation</h4>
+        <ul class="footer__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="fuer-eltern.html">Für Eltern</a></li>
+          <li><a href="fuer-aemter.html">Für Ämter</a></li>
+          <li><a href="ueber-uns.html">Über uns</a></li>
+          <li><a href="karriere.html">Karriere</a></li>
+          <li><a href="kontakt.html">Kontakt & FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__heading">Rechtliches</h4>
+        <ul class="footer__links">
+          <li><a href="#">Impressum</a></li>
+          <li><a href="#">Datenschutz</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="footer__heading">Kontakt</h4>
+        <div class="footer__contact-item">📧 <a href="mailto:anfrage@teilhabepilot.de">anfrage@teilhabepilot.de</a></div>
+        <div class="footer__contact-item">📞 <a href="tel:069870093540">069 870093540</a></div>
+        <div class="footer__contact-item">📍 Berliner Str. 300b, Offenbach</div>
+        <div class="footer__contact-item">Mo–Fr: 07:00–17:00 Uhr</div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2025 teilhabepilot UG (haftungsbeschränkt)</span>
+      <span>Berliner Straße 300b, 63065 Offenbach am Main</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
