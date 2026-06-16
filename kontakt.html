@@ -30,17 +30,8 @@
   </div>
 </header>
 
-<!-- PAGE HERO -->
-<section class="page-hero">
-  <div class="container" style="position:relative;z-index:1;">
-    <span class="section-label" style="color:rgba(255,255,255,0.65);">Wir sind für Sie da</span>
-    <h1>Kontakt & FAQ</h1>
-    <p>Mo–Fr von 07:00 bis 17:00 Uhr erreichbar. Wir antworten innerhalb von 24 Stunden.</p>
-  </div>
-</section>
-
 <!-- KONTAKT -->
-<section class="section section--white">
+<section class="section section--white" style="padding-top:120px;">
   <div class="container">
     <div style="display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start;">
 
@@ -138,6 +129,23 @@
           <div class="form-group">
             <label for="nachricht">Ihre Nachricht</label>
             <textarea id="nachricht" name="nachricht" placeholder="Beschreiben Sie Ihr Anliegen kurz — wir melden uns innerhalb von 24 Stunden…" required></textarea>
+          </div>
+          <div class="form-group">
+            <p style="font-family:'Nunito',sans-serif;font-weight:700;font-size:0.9rem;color:var(--indigo);margin-bottom:12px;">Ich kontaktiere Sie, weil …</p>
+            <div style="display:flex;flex-direction:column;gap:10px;">
+              <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-weight:400;color:var(--gray);padding:12px 14px;background:var(--bg);border-radius:10px;border:2px solid transparent;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--lavender)'" onmouseout="this.style.borderColor='transparent'">
+                <input type="checkbox" name="rolle" value="eltern" style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:var(--indigo);">
+                <span style="font-size:0.95rem;">Wir sind <strong>Eltern</strong> und suchen für unser Kind eine Teilhabeassistenz</span>
+              </label>
+              <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-weight:400;color:var(--gray);padding:12px 14px;background:var(--bg);border-radius:10px;border:2px solid transparent;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--lavender)'" onmouseout="this.style.borderColor='transparent'">
+                <input type="checkbox" name="rolle" value="amt" style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:var(--indigo);">
+                <span style="font-size:0.95rem;">Wir sind vom <strong>Jugendamt oder Sozialamt</strong> und streben eine Zusammenarbeit an</span>
+              </label>
+              <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-weight:400;color:var(--gray);padding:12px 14px;background:var(--bg);border-radius:10px;border:2px solid transparent;transition:border-color 0.2s;" onmouseover="this.style.borderColor='var(--lavender)'" onmouseout="this.style.borderColor='transparent'">
+                <input type="checkbox" name="rolle" value="familienhelfer" style="width:18px;height:18px;min-width:18px;margin-top:2px;accent-color:var(--indigo);">
+                <span style="font-size:0.95rem;">Ich bin <strong>Familienhelfer*in</strong> und suche für meine Familie eine Teilhabeassistenz</span>
+              </label>
+            </div>
           </div>
           <div class="form-group">
             <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-weight:400;color:var(--light-gray);">
