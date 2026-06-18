@@ -876,7 +876,6 @@ img { max-width: 100%; height: auto; }
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
   .hero__inner { grid-template-columns: 1fr; gap: 40px; }
-  .hero__image { display: none; }
   .two-col { grid-template-columns: 1fr; gap: 40px; }
   .two-col--reverse { direction: ltr; }
   .kontakt-grid { grid-template-columns: 1fr; gap: 40px; }
