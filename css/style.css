@@ -31,6 +31,7 @@ body {
   color: var(--gray);
   line-height: 1.7;
   font-size: 17px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5 {
@@ -554,7 +555,9 @@ img { max-width: 100%; height: auto; }
   border-radius: 12px;
   box-shadow: var(--shadow);
   transition: transform var(--transition);
+  min-width: 0;
 }
+.contact-item > div { min-width: 0; overflow-wrap: break-word; }
 .contact-item:hover { transform: translateX(4px); }
 
 .contact-item__icon {
@@ -834,8 +837,9 @@ img { max-width: 100%; height: auto; }
   color: rgba(255,255,255,0.65);
   font-size: 0.9rem;
   margin-bottom: 10px;
+  flex-wrap: wrap;
 }
-.footer__contact-item a { color: rgba(255,255,255,0.65); }
+.footer__contact-item a { color: rgba(255,255,255,0.65); overflow-wrap: break-word; min-width: 0; }
 .footer__contact-item a:hover { color: var(--white); }
 
 .footer__bottom {
