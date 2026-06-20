@@ -204,41 +204,24 @@ img { max-width: 100%; height: auto; }
 
 /* ---- Hero ---- */
 .hero {
-  padding-top: 140px;
-  padding-bottom: 80px;
+  padding-top: 160px;
+  padding-bottom: 110px;
   position: relative;
   overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -120px; right: -180px;
-  width: 700px; height: 700px;
-  background: var(--lavender);
-  border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
-  z-index: 0;
-  opacity: 0.65;
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: -80px; left: -100px;
-  width: 400px; height: 400px;
-  background: var(--lavender);
-  border-radius: 40% 60% 45% 55% / 55% 45% 55% 45%;
-  z-index: 0;
-  opacity: 0.4;
+  background-image:
+    linear-gradient(100deg, rgba(240,242,250,0.96) 0%, rgba(240,242,250,0.90) 38%, rgba(216,220,240,0.55) 68%, rgba(216,220,240,0.32) 100%),
+    url('../hero-bg.png');
+  background-size: cover;
+  background-position: center 28%;
+  background-repeat: no-repeat;
 }
 
 .hero__inner {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
-  align-items: center;
 }
+
+.hero__content { max-width: 560px; }
 
 .hero__badge {
   display: inline-flex;
@@ -263,28 +246,6 @@ img { max-width: 100%; height: auto; }
 }
 
 .hero__actions { display: flex; gap: 16px; flex-wrap: wrap; }
-
-.hero__image {
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-.hero__image-blob {
-  position: absolute;
-  inset: -20px;
-  background: var(--lavender);
-  border-radius: 55% 45% 60% 40% / 45% 55% 45% 55%;
-  z-index: 0;
-}
-
-.hero__image img {
-  position: relative;
-  z-index: 1;
-  border-radius: 20px;
-  width: 100%;
-  max-width: 460px;
-}
 
 /* ---- Stats Bar ---- */
 .stats-bar {
@@ -875,7 +836,13 @@ img { max-width: 100%; height: auto; }
 
 /* ---- Responsive ---- */
 @media (max-width: 900px) {
-  .hero__inner { grid-template-columns: 1fr; gap: 40px; }
+  .hero {
+    background-image:
+      linear-gradient(180deg, rgba(240,242,250,0.96) 0%, rgba(240,242,250,0.92) 45%, rgba(216,220,240,0.65) 100%),
+      url('../hero-bg.png');
+    background-position: center 20%;
+  }
+  .hero__content { max-width: none; }
   .two-col { grid-template-columns: 1fr; gap: 40px; }
   .two-col--reverse { direction: ltr; }
   .kontakt-grid { grid-template-columns: 1fr; gap: 40px; }
@@ -889,7 +856,7 @@ img { max-width: 100%; height: auto; }
   .stats-bar__inner { grid-template-columns: repeat(2, 1fr); }
   .footer__inner { grid-template-columns: 1fr; gap: 32px; }
   .job-card { flex-direction: column; }
-  .hero { padding-top: 110px; }
+  .hero { padding-top: 110px; padding-bottom: 60px; }
   .hero__actions { flex-direction: column; }
   .btn { justify-content: center; }
   .contact-form { padding: 24px; }
