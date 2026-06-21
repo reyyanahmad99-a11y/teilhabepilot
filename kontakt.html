@@ -81,7 +81,10 @@
       <!-- Contact Form -->
       <div class="contact-form">
         <h3 style="margin-bottom:24px; font-size:1.4rem;">Nachricht senden</h3>
-        <form>
+        <form action="https://formsubmit.co/anfrage@teilhabepilot.de" method="POST">
+          <input type="hidden" name="_subject" value="Neue Anfrage über teilhabepilot.de">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
           <div class="form-row">
             <div class="form-group">
               <label for="vorname">Vorname</label>

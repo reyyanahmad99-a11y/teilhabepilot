@@ -64,17 +64,33 @@ if (privacyBanner && privacyBannerOk) {
 // Contact form submit
 const form = document.querySelector('.contact-form form');
 if (form) {
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('[type=submit]');
-    btn.textContent = 'Nachricht gesendet ✓';
+    const originalText = btn.textContent;
+    btn.textContent = 'Wird gesendet…';
     btn.disabled = true;
-    btn.style.background = '#4CAF50';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' }
+      });
+      if (!response.ok) throw new Error('send failed');
+
+      btn.textContent = 'Nachricht gesendet ✓';
+      btn.style.background = '#4CAF50';
+      form.reset();
+    } catch (err) {
+      btn.textContent = 'Fehler — bitte erneut versuchen';
+      btn.style.background = '#d9534f';
+    }
+
     setTimeout(() => {
-      btn.textContent = 'Nachricht senden';
+      btn.textContent = originalText;
       btn.disabled = false;
       btn.style.background = '';
-      form.reset();
-    }, 3000);
+    }, 4000);
   });
 }
