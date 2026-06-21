@@ -888,3 +888,38 @@ img { max-width: 100%; height: auto; }
   .contact-strip { flex-direction: column; gap: 20px; }
   .contact-strip__item { flex-direction: column; text-align: center; gap: 6px; }
 }
+
+/* ---- Privacy Banner ---- */
+.privacy-banner {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  z-index: 2000;
+  background: var(--indigo);
+  color: rgba(255,255,255,0.9);
+  padding: 18px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-size: 0.9rem;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.18);
+}
+.privacy-banner.hidden { display: none; }
+.privacy-banner p { max-width: 720px; margin: 0; }
+.privacy-banner a { color: var(--white); font-weight: 700; text-decoration: underline; }
+.privacy-banner__btn {
+  background: var(--white);
+  color: var(--indigo);
+  border: none;
+  padding: 10px 26px;
+  border-radius: 50px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  flex-shrink: 0;
+  white-space: nowrap;
+  transition: transform var(--transition);
+}
+.privacy-banner__btn:hover { transform: translateY(-2px); }

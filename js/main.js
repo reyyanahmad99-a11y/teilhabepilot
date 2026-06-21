@@ -48,6 +48,19 @@ document.querySelectorAll('.card, .step, .job-card, .team-card, .faq-item').forE
   observer.observe(el);
 });
 
+// Privacy banner
+const privacyBanner = document.getElementById('privacyBanner');
+const privacyBannerOk = document.getElementById('privacyBannerOk');
+if (privacyBanner && privacyBannerOk) {
+  if (!localStorage.getItem('privacyNoticeSeen')) {
+    privacyBanner.classList.remove('hidden');
+  }
+  privacyBannerOk.addEventListener('click', () => {
+    localStorage.setItem('privacyNoticeSeen', '1');
+    privacyBanner.classList.add('hidden');
+  });
+}
+
 // Contact form submit
 const form = document.querySelector('.contact-form form');
 if (form) {
