@@ -48,16 +48,16 @@ document.querySelectorAll('.card, .step, .job-card, .team-card, .faq-item').forE
   observer.observe(el);
 });
 
-// Privacy banner
-const privacyBanner = document.getElementById('privacyBanner');
-const privacyBannerOk = document.getElementById('privacyBannerOk');
-if (privacyBanner && privacyBannerOk) {
-  if (!localStorage.getItem('privacyNoticeSeen')) {
-    privacyBanner.classList.remove('hidden');
+// Cookie banner
+const cookieBanner = document.getElementById('cookieBanner');
+const cookieBannerOk = document.getElementById('cookieBannerOk');
+if (cookieBanner && cookieBannerOk) {
+  if (!localStorage.getItem('cookieConsentSeen')) {
+    cookieBanner.classList.remove('hidden');
   }
-  privacyBannerOk.addEventListener('click', () => {
-    localStorage.setItem('privacyNoticeSeen', '1');
-    privacyBanner.classList.add('hidden');
+  cookieBannerOk.addEventListener('click', () => {
+    localStorage.setItem('cookieConsentSeen', '1');
+    cookieBanner.classList.add('hidden');
   });
 }
 

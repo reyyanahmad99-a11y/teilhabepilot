@@ -133,6 +133,10 @@
               <span style="font-size:0.9rem;">Ich stimme der Verarbeitung meiner Daten gemäß der <a href="datenschutz.html" style="color:var(--indigo);font-weight:600;">Datenschutzerklärung</a> zu.</span>
             </label>
           </div>
+          <div class="form-privacy-notice">
+            <div class="form-privacy-notice__icon">🔒</div>
+            <p>Bitte geben Sie im Kontaktformular keine Namen von Kindern, Diagnosen, medizinischen Befunde oder andere besonders sensible personenbezogene Daten an. Für eine erste Kontaktaufnahme genügt eine allgemeine Beschreibung Ihres Anliegens. Weitere Informationen können bei Bedarf in einem persönlichen und geschützten Gespräch besprochen werden. Vielen Dank für Ihr Verständnis.</p>
+          </div>
           <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Nachricht senden</button>
         </form>
       </div>
@@ -284,10 +288,15 @@
   </div>
 </footer>
 
-<!-- PRIVACY BANNER -->
-<div class="privacy-banner hidden" id="privacyBanner">
-  <p>Wir nutzen Google Fonts zur Darstellung von Schriftarten, wodurch eine Verbindung zu Google-Servern hergestellt wird. Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
-  <button class="privacy-banner__btn" id="privacyBannerOk">Verstanden</button>
+<!-- COOKIE BANNER -->
+<div class="cookie-banner hidden" id="cookieBanner">
+  <div class="cookie-banner__text">
+    <strong>🍪 Datenschutz &amp; Cookies</strong>
+    <p>Diese Website nutzt Google Fonts (Verbindung zu Google-Servern) sowie technisch notwendige Funktionen (lokaler Speicher). Es werden keine Tracking- oder Werbe-Cookies gesetzt. Mehr dazu in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
+  </div>
+  <div class="cookie-banner__actions">
+    <button class="cookie-banner__btn" id="cookieBannerOk">Verstanden &amp; Akzeptieren</button>
+  </div>
 </div>
 
 <script src="js/main.js"></script>
